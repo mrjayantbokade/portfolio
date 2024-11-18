@@ -5,7 +5,7 @@ const HeroSection = () => {
     <>
       <div className={`mt-36 mx-5 md:px-24 md:py-2 `}>
         <div className={`flex flex-col    `}>
-          <h3 className={`text-white font font-semibold text-md  `}>Hi, I'm</h3>
+          <h3 className={`text-white font font-semibold text-md `}>Hi, I'm</h3>
           <h1 className={`text-white  font-bold text-5xl mt-5 `}>
             Jayant Bokade
           </h1>
@@ -13,7 +13,7 @@ const HeroSection = () => {
             a <span className="text-[#187BE3]"> Full</span>-
             <span className="text-[#E3AB03]">Stack</span> Developer
           </h2>
-          <p className={`text-white  font-meduim text-xl mt-6 max-w-xl  `}>
+          <p className={`text-white  font-meduim text-xl mt-6 max-w-xl `}>
             Building solutions for the web and beyond delivering innovative and
             scalable solutions while exploring new possibilities in technology
           </p>

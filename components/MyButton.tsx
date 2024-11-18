@@ -1,5 +1,5 @@
 
-const YellowButton = (  { textprop }: { textprop: any } )    => {
+const YellowButton = (  { textprop }: { textprop: String } )    => {
     return (
         <button className="   bg-gradient-to-r from-[#FFE38F] to-[#B28706] text-[#22211F] font-semibold   h-fit py-1 px-4 rounded-2xl ">
             {textprop}
@@ -7,7 +7,7 @@ const YellowButton = (  { textprop }: { textprop: any } )    => {
     )
 }
 
-const WhiteButton = (  { textprop }: { textprop: any } )    => {
+const WhiteButton = (  { textprop }: { textprop: String } )    => {
     return (
         <button className=" hidden sm:block lg:block  bg-gradient-to-r from-[#FFFFFF]  via-[#E0DCD3] to-[#B3B2AE] text-[#22211F] font-semibold    h-fit py-1 px-4 rounded-2xl ">
             {textprop}
