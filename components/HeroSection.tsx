@@ -1,4 +1,3 @@
-import {  YellowButton } from "./MyButton";
 import Link from "next/link";
 
 const HeroSection = () => {

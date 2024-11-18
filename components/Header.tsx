@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {WhiteButton, YellowButton} from "@/components/MyButton";
-import { Button } from "@/components/ui/button"
 
 
 const Header = () => {
@@ -15,18 +14,7 @@ const Header = () => {
                            height={20}/>
                 </Link>
 
-                {/*<div>*/}
-                {/*    <Button variant={"ghost"}>*/}
-                {/*        home*/}
-                {/*    </Button>*/}
-
-                {/*    <Button variant={"ghost"}>*/}
-                {/*        projects*/}
-                {/*    </Button>*/}
-
-                {/*    <Button  className={`text-white`} variant={"ghost"}>*/}
-                {/*        about*/}
-                {/*    </Button>*/}
+               
 
                 {/*</div>*/}
 
