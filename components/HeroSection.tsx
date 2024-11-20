@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="mt-36  mx-5 md:px-24 md:py-2 md:mt-28 flex flex-row  md:max-w-8xl  ">
-      <div className="flex flex-col  w-fit ">
+    <div className="mt-24  mx-5 lg:px-24 md:py-2 md:mt-28 flex flex-row  mb-1 md:max-w-8xl  ">
+      <div className="flex flex-col  w-fit  ">
         <h3 className="text-white font-semibold text-md md:text-lg">Hi, I am</h3>
         <h1 className="text-white font-bold text-5xl mt-2 sm:text-6xl md:text-8xl">Jayant Bokade</h1>
         <h2 className="text-white font-semibold text-3xl mt-1 sm:text-4xl md:text-5xl">
@@ -24,7 +24,9 @@ const HeroSection = () => {
       </div>
 
     <div className="hidden md:block lg:block flex-row mx-auto h-full w-fit my-auto   justify-end">
-      <Image className="hidden xl:block  " src="/heroimage.webp" alt="logo" width={600} height={20}/>
+        
+      <Image className="hidden xl:block  " src="/heroimagewhitebraces100.webp" alt="logo" width={600} height={20}/>
+      {/* <Image className="hidden xl:block  " src="/heroimageredbraces.webp" alt="logo" width={600} height={20}/> */}
 
     </div>
     </div>
