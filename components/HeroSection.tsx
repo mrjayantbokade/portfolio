@@ -25,7 +25,7 @@ const HeroSection = () => {
 
     <div className="hidden md:block lg:block flex-row mx-auto h-full w-fit my-auto   justify-end">
         
-      <Image className="hidden xl:block  " src="/heroimagewhitebraces100.webp" alt="logo" width={600} height={20}/>
+      <Image className="hidden xl:block  " src="/heroimagewhitebraces100.webp" alt="logo"  loading="lazy" width={550} height={200}/>
       {/* <Image className="hidden xl:block  " src="/heroimageredbraces.webp" alt="logo" width={600} height={20}/> */}
 
     </div>
