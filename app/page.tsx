@@ -21,7 +21,6 @@ export default function Home() {
 
       <ProjectsPage />
 
-      <div>hello</div>
     </div>
   );
 }
