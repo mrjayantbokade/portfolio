@@ -1,11 +1,12 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ProjectsPage from "@/components/ProjectsPage";
+import Skillpage from "@/components/Skillpage";
 import { Spotlight } from "@/components/ui/Spotlight";
 
 export default function Home() {
   return (
-    <div className={`bg-[#221b06] `}>
+    <div id="no-scroll-bar1" className={`bg-[#221b06] h-screen overflow-y-scroll `}>
       <div
         className={`bg-gradient-to-tr from-[#121212] to-[#574202]  w-full   lg:h-screen  `}
       >
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
 
       <ProjectsPage />
+      <Skillpage />
 
     </div>
   );

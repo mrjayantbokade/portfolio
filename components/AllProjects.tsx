@@ -6,30 +6,157 @@ import { mdiCheckCircleOutline } from "@mdi/js";
 import { LiveButtonGreen, ViewCodeButton } from "./MyButton";
 import Link from "next/link";
 
-const ProjectsPage = () => {
+const AllProjects = () => {
   return (
     <>
-      <div className="bg-gradient-to-br from-[#121212]  to-[#574202]  w-full  h-fit text-white pb-32  ">
+      <div
+        id="no-scroll-bar"
+        className="bg-gradient-to-br from-[#121212]  to-[#574202]  w-full  text-white h-screen overflow-y-scroll "
+      >
         <div className="mx-5 lg:px-24  flex flex-col  md:max-w-9xl  md:mx-auto justify-center items-center">
-          {/* <div className="flex flex-row gap-1 justify-center items-center">
-            <h1 className="text-[#E3AB03] font-bold text-2xl pb-8 mt-1 sm:text-3xl md:text-4xl">
-              &#123;
-            </h1>
-            <h1 className="font-bold text-xl pt-1 pb-8 mt-1 sm:text-3xl md:text-4xl">
-              Projects
-            </h1>
-            <h1 className=" text-[#187BE3]  font-bold text-2xl pb-8 mt-1 sm:text-3xl md:text-4xl">
-              &#125;
-            </h1>
-          </div> */}
-
-          <h1 className="font-semibold text-xl pt-28 pb-10 md:pb-32 sm:text-xl md:text-2xl">
-            Projects
-          </h1>
-
           <div
             className={
-              "flex  md:h-[1700px] w-full flex-col gap-10 pb-10 md:pb-20 lg:pb-32 lg:h-[500px] lg:flex-row justify-center items-center"
+              "flex  w-full flex-col gap-10 mb-12 mt-12 md:pb-20 lg:pb-2  lg:flex-row justify-center items-center"
+            }
+          >
+            <MagicCard className="  max-w-sm  h-[550px] w-[350px] shadow-md">
+              <div className="bg-white h-2/6 w-full">
+                <Image
+                  className=" "
+                  src="/employeemanagement.png"
+                  alt="logo"
+                  width={600}
+                  height={20}
+                />
+                <div className="px-6 py-6">
+                  <div className=" flex flex-row gap-2">
+                    <TagButton textprop={`Full-Stack`} />
+                    <TagButton textprop={`React`} />
+                    <TagButton textprop={`Intermediate`} />
+                  </div>
+                  <h1 className="text-[##FBBF24] font-semibold text-2xl py-3">
+                    Employee Management
+                  </h1>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">Responsive Design</p>
+                    </div>
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">Used local-storage</p>
+                    </div>
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">REST API</p>
+                    </div>
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">REST API</p>
+                    </div>
+                  </div>
+                  <div className="pt-16 flex flex-row gap-2">
+                    <Link
+                      href={`https://github.com/mrjayantbokade/Employe-Management-Full-Stack`}
+                    >
+                      <ViewCodeButton textprop="view code" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </MagicCard>
+
+            <MagicCard className="  max-w-sm  h-[550px] w-[350px] shadow-md">
+              <div className="bg-white h-2/6 w-full">
+                <Image
+                  className=" "
+                  src="/landingpage.png"
+                  alt="logo"
+                  width={600}
+                  height={20}
+                />
+                <div className="px-6 py-6">
+                  <div className=" flex flex-row gap-2">
+                    <TagButton textprop={`MagicUI`} />
+                    <TagButton textprop={`React`} />
+                    <TagButton textprop={`Intermediate`} />
+                  </div>
+                  <h1 className="text-[##FBBF24] font-semibold text-2xl py-3">
+                    Landing Page Design
+                  </h1>
+                  <div className="flex flex-col gap-2">
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">Responsive Design</p>
+                    </div>
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">Reusable components</p>
+                    </div>
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">Creative Touch</p>
+                    </div>
+                    <div className="flex flex-row gap-2  ">
+                      <Icon
+                        path={mdiCheckCircleOutline}
+                        size={0.8}
+                        className="text-green-600"
+                      />
+
+                      <p className="text-sm">Website Redesign</p>
+                    </div>
+                  </div>
+                  <div className="pt-16 flex flex-row gap-2">
+                    <Link href={`https://github.com/mrjayantbokade/ByteUprise`}>
+                      <ViewCodeButton textprop="view code" />
+                    </Link>
+                    <Link href={`https://byte-uprise.vercel.app/`}>
+                      <LiveButtonGreen />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </MagicCard>
+          </div>
+          <div
+            className={
+              "flex  w-full flex-col gap-10 mb-6 mt-2 md:pb-20 lg:pb-2  lg:flex-row justify-center items-center"
             }
           >
             <MagicCard className="  max-w-sm  h-[550px] w-[350px] shadow-md">
@@ -89,7 +216,7 @@ const ProjectsPage = () => {
                   </div>
                   <div className="pt-16 flex flex-row gap-2">
                     <Link href={`https://github.com/mrjayantbokade/youtube-backend`}>
-                    <ViewCodeButton textprop="view code" />
+                      <ViewCodeButton textprop="view code" />
                     </Link>
                   </div>
                 </div>
@@ -155,13 +282,12 @@ const ProjectsPage = () => {
                   </div>
                   <div className="pt-16 flex flex-row gap-2">
                     <Link href={`https://github.com/mrjayantbokade/ebook`}>
-                    <ViewCodeButton textprop="view code" />
+                      <ViewCodeButton textprop="view code" />
                     </Link>
                   </div>
                 </div>
               </div>
             </MagicCard>
-            
             <MagicCard className="  max-w-sm  h-[550px] w-[350px] shadow-md">
               <div className="bg-white h-2/6 w-full">
                 <Image
@@ -230,19 +356,17 @@ const ProjectsPage = () => {
               </div>
             </MagicCard>
           </div>
-
-          <div className="flex  w-full justify-center items-center">
-            <div className="text-transparent">hello</div>
-            <Link href={`/projects`}>
+        </div>
+        <div className="flex  flex-row justify-center items-center mb-10">
+          <Link href={`https://github.com/mrjayantbokade`}>
             <button className="   bg-[#D69E2E]/15 text-[14px] font-medium  text-yellow-200  border border-yellow-200/15  h-fit py-1 px-3 rounded-md ">
-              view more
+              view all
             </button>
-            </Link>
-          </div>
+          </Link>
         </div>
       </div>
     </>
   );
 };
 
-export default ProjectsPage;
+export default AllProjects;
